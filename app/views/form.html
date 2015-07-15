@@ -39,31 +39,25 @@
                             <div class="form-group">
                                 <label>Checkboxes</label>
                                 <div class="checkbox">
-                                    <label>
-                                        <input type="checkbox" value="">Checkbox 1
-                                    </label>
+                                    <checkbox ng-model="checkbox1"></checkbox> Checkbox 1
                                 </div>
                                 <div class="checkbox">
-                                    <label>
-                                        <input type="checkbox" value="">Checkbox 2
-                                    </label>
+                                    <checkbox ng-model="checkbox2"></checkbox> Checkbox 2
                                 </div>
                                 <div class="checkbox">
-                                    <label>
-                                        <input type="checkbox" value="">Checkbox 3
-                                    </label>
+                                    <checkbox ng-model="checkbox3"></checkbox> Checkbox 3
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label>Inline Checkboxes</label>
                                 <label class="checkbox-inline">
-                                    <input type="checkbox">1
+                                    <checkbox ng-model="inline_checkbox1"></checkbox> 1
                                 </label>
                                 <label class="checkbox-inline">
-                                    <input type="checkbox">2
+                                    <checkbox ng-model="inline_checkbox2"></checkbox> 2
                                 </label>
                                 <label class="checkbox-inline">
-                                    <input type="checkbox">3
+                                    <checkbox ng-model="inline_checkbox3"></checkbox> 3
                                 </label>
                             </div>
                             <div class="form-group">
@@ -136,9 +130,7 @@
                                     </select>
                                 </div>
                                 <div class="checkbox">
-                                    <label>
-                                        <input type="checkbox">Disabled Checkbox
-                                    </label>
+                                    <checkbox ng-model="disabled_checkbox"></checkbox> Disabled Checkbox
                                 </div>
                                 <button type="submit" class="btn btn-primary">Disabled Button</button>
                             </fieldset>
