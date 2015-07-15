@@ -13,6 +13,7 @@ angular.module('sbAdminApp', [
     'ui.bootstrap',
     'angular-loading-bar',
     'ui.checkbox',
+    'ui.bootstrap.datetimepicker',
 ])
 
 .config(['$stateProvider', '$urlRouterProvider', '$ocLazyLoadProvider', function($stateProvider, $urlRouterProvider, $ocLazyLoadProvider) {
@@ -171,6 +172,11 @@ angular.module('sbAdminApp', [
     .state('dashboard.grid', {
         templateUrl: 'views/ui-elements/grid.html',
         url: '/grid'
+    })
+
+    .state('dashboard.datetimepicker', {
+        templateUrl: 'views/ui-elements/datetimepicker.html',
+        url: '/datetimepicker'
     })
 
 }])
