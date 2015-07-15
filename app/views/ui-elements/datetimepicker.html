@@ -20,4 +20,58 @@
         </div>
     </div>
 
+    <div class="col-lg-4">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                Dropdown datetimepicker
+            </div>
+            <div class="panel-body">
+                <div class="dropdown">
+                    <a class="dropdown-toggle" id="dLabel" role="button" data-toggle="dropdown" data-target="#" href="">
+                        Click here to show calendar
+                    </a>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                        <datetimepicker
+                            data-ng-model="dropdown_datetime"
+                            data-datetimepicker-config="{ dropdownSelector: '.dropdown-toggle' }"></datetimepicker>
+                    </ul>
+                </div>
+            </div>
+            <div class="panel-footer">
+                Time: {{ dropdown_datetime | date: 'yyyy-MM-dd HH:mm'}}
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-4">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                Dropdown datetimepicker
+            </div>
+            <div class="panel-body">
+                <div class="dropdown">
+                    <a class="dropdown-toggle my-toggle-select" id="dLabel" role="button" data-toggle="dropdown" data-target="#" href="">
+                        <div class="form-group input-group">
+                            <input type="text" class="form-control">
+                            <span class="input-group-btn">
+                                <button class="btn btn-default" type="button">
+                                    <i class="fa fa-calendar"></i>
+                                </button>
+                            </span>
+                        </div>
+                    </a>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                        <datetimepicker
+                            data-ng-model="input_datetime"
+                            data-datetimepicker-config="{ dropdownSelector: '.my-toggle-select' }"
+                        ></datetimepicker>
+                    </ul>
+                </div>
+            </div>
+            <div class="panel-footer">
+                Time: {{ input_datetime | date: 'yyyy-MM-dd HH:mm'}}
+            </div>
+        </div>
+    </div>
+
 </div>
