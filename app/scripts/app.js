@@ -22,14 +22,9 @@ angular.module('sbAdminApp', [
         events: true,
     });
 
-    $urlRouterProvider.otherwise('/404');
+    $urlRouterProvider.otherwise('/dashboard/home');
 
     $stateProvider
-
-    .state('404', {
-        url: '/404',
-        templateUrl: '404.html',
-    })
 
     .state('dashboard', {
         url: '/dashboard',
