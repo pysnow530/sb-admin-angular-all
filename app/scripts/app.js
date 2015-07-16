@@ -14,6 +14,7 @@ angular.module('sbAdminApp', [
     'angular-loading-bar',
     'ui.checkbox',
     'ui.bootstrap.datetimepicker',
+    'ngCookies',
 ])
 
 .config(['$stateProvider', '$urlRouterProvider', '$ocLazyLoadProvider', function($stateProvider, $urlRouterProvider, $ocLazyLoadProvider) {

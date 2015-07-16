@@ -53,11 +53,6 @@ angular
                 })
                 $ocLazyLoad.load(
                 {
-                  name:'ngCookies',
-                  files:['bower_components/angular-cookies/angular-cookies.js']
-                })
-                $ocLazyLoad.load(
-                {
                   name:'ngResource',
                   files:['bower_components/angular-resource/angular-resource.js']
                 })
