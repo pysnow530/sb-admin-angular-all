@@ -179,6 +179,11 @@ angular.module('sbAdminApp', [
         url: '/datetimepicker'
     })
 
+    .state('dashboard.paginations', {
+        templateUrl: 'views/ui-elements/paginations.html',
+        url: '/paginations',
+    })
+
 }])
 
 .config(function($httpProvider) {

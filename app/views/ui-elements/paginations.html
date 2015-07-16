@@ -1,0 +1,48 @@
+<div class="row">
+    <div class="col-lg-12">
+        <h1 class="page-header">Pagination</h1>
+    </div>
+</div>
+
+<div class="row">
+
+    <div class="col-lg-6">
+
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                Normal pagination
+            </div>
+            <div class="panel-body">
+                <pagination ng-model="paginations.normal"
+                    items-per-page="10"
+                    total-items="400"
+                    max-size="10"
+                    previous-text="<"
+                    next-text=">"
+                    ng-change="">
+                </pagination>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="col-lg-6">
+
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                Pagination with boundary
+            </div>
+            <div class="panel-body">
+                <pagination ng-model="paginations.with_boundary"
+                    items-per-page="10"
+                    total-items="400"
+                    max-size="5"
+                    boundary-links="true"
+                    ng-change="">
+                </pagination>
+            </div>
+        </div>
+
+    </div>
+
+</div>
